@@ -25,7 +25,7 @@ jobs:
           objdump -p target/release/volta
           readelf -d target/release/volta
       - name: Upload release artifact
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: linux-centos
           path: target/release/volta-centos.tar.gz
